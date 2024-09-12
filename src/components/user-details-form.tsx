@@ -19,7 +19,7 @@ import { useNavigate } from 'react-router-dom'
 const profileFormSchema = z.object({
   name: z.string(),
   username: z.string(),
-  email: z.string().max(0).or(z.string().email()),
+  email: z.string().or(z.string().email()),
   phone: z.string(),
   website: z.string(),
 })
